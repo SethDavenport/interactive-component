@@ -22,5 +22,4 @@ export class InteractiveGraphComponent {
 
   getDataPointLabels = () => Object.keys(this.portfolioWeights[this.selectedRiskLevel]);
   getDataPoint = (dataPointLabel: string) => this.portfolioWeights[this.selectedRiskLevel][dataPointLabel];
-  getDataPointColor = (dataPointLabel: string) =>
 }
