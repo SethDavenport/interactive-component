@@ -1,0 +1,8 @@
+<div class="graph">
+  <div class="dataPoint" *ngFor="let dataPointLabel of getDataPointLabels()">
+    <div class="bar">
+      {{ getDataPoint(dataPointLabel) }}
+    </div>
+    {{ dataPointLabel }}
+  </div>
+</div>

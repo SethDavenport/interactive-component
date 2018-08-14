@@ -1,0 +1,9 @@
+<div *ngFor="let riskLevel of allRiskLevels">
+  <input
+    type="radio"
+    name="risk"
+    [value]="riskLevel"
+    [(ngModel)]="selectedRiskLevel"
+    (change)="selectedRiskLevelChanges.emit(riskLevel)">
+    {{ riskLevel }}
+</div>
